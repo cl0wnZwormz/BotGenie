@@ -74,9 +74,8 @@ code blocks for commands
 
 For support please contact ``` miaunescu0 ``` on discord.
 
-## Authors
+## Creator
 
-Contributors names and contact info
+Contact info:
 
-ex. kamikaze 
-ex. [@DomPizzie](https://twitter.com/dompizzie)
+[kamikaze](https://guns.lol/kamikaze)
