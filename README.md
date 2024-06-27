@@ -3,37 +3,51 @@
 A user friendly Discord selfbot
 <sup><sub>Disclaimer: this is against Discord's TOS, do it at your own risk. We aren't responsible for any punishments against you.</sub></sup>
 
-### Prerequisites
-    You will need your Discord account token, and your user id
-    To get your Discord token go into Discord Web open inspect element, go to console, type "allow pasting". After that run the following command:
-    
-    ```
-    window.webpackChunkdiscord_app.push([
-    [Math.random()],
-    {},
-    req => {
-        if (!req.c) return;
-        for (const m of Object.keys(req.c)
-        .map(x => req.c[x].exports)
-        .filter(x => x)) {
-        if (m.default && m.default.getToken !== undefined) {
-            return copy(m.default.getToken());
-        }
-        if (m.getToken !== undefined) {
-            return copy(m.getToken());
-        }
-        }
-    },
-    ]);
-    console.log('%cWorked!', 'font-size: 50px');
-    console.log(`%cYou now have your token in the clipboard!`, 'font-size: 16px');
-    ```
+## Prerequisites
 
-    To get your user id follow this short tutorial. Click [here](https://www.youtube.com/watch?v=mc3cV57m3mM) to get redirected.
+Before proceeding, ensure you have the following:
 
-    Keep the token and user id somewhere safe until you run the setup.bat from below.
+- Your Discord account token
+- Your user ID
 
-    <h2>DO NOT SHARE YOUR TOKEN WITH ANYONE!</h2>
+### To obtain your Discord account token:
+
+1. Open Discord Web.
+2. Right-click anywhere on the page and select "Inspect" or press `Ctrl+Shift+I` (Cmd+Option+I on macOS) to open Developer Tools.
+3. Go to the "Console" tab.
+4. Type the following command and press Enter:
+   
+   ```javascript
+   window.webpackChunkdiscord_app.push([
+     [Math.random()],
+     {},
+     req => {
+       if (!req.c) return;
+       for (const m of Object.keys(req.c)
+         .map(x => req.c[x].exports)
+         .filter(x => x)) {
+         if (m.default && m.default.getToken !== undefined) {
+           return copy(m.default.getToken());
+         }
+         if (m.getToken !== undefined) {
+           return copy(m.getToken());
+         }
+       }
+     },
+   ]);
+   console.log('%cWorked!', 'font-size: 50px');
+   console.log(`%cYou now have your token in the clipboard!`, 'font-size: 16px');
+   ```
+
+5. Your Discord token will be copied to your clipboard. Keep it secure and do not share it with anyone.
+
+### To obtain your user ID:
+
+Follow this short tutorial video: [How to Find Your Discord User ID](https://www.youtube.com/watch?v=mc3cV57m3mM).
+
+Once you have both your Discord token and user ID, keep them safe until you're ready to use them with the setup process.
+
+**Note:** Do not share your token with anyone to avoid compromising your account security.
 
 ### Installing
 
