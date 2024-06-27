@@ -66,9 +66,6 @@ Once you have both your Discord token and user ID, keep them safe until you're r
 
 * How to run the program
 * The setup should have created a shortcut on your desktop. Run that.
-```
-code blocks for commands
-```
 
 ## Help
 
