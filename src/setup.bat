@@ -90,6 +90,20 @@ echo.
 echo The run_bot.bat file has been created in %installLocation%. You can use it to run your bot with "node index.js".
 echo.
 
+:: Create a shortcut for run_bot.bat on desktop using VBScript
+echo Creating shortcut for run_bot.bat on desktop...
+echo Set oWS = WScript.CreateObject("WScript.Shell") > createShortcut.vbs
+echo sLinkFile = oWS.ExpandEnvironmentStrings("%USERPROFILE%\Desktop\run_bot.lnk") >> createShortcut.vbs
+echo Set oLink = oWS.CreateShortcut(sLinkFile) >> createShortcut.vbs
+echo oLink.TargetPath = "%installLocation%\run_bot.bat" >> createShortcut.vbs
+echo oLink.Save >> createShortcut.vbs
+cscript //nologo createShortcut.vbs
+del createShortcut.vbs
+
+:: Notify user about the created shortcut
+echo.
+echo The shortcut for run_bot.bat has been created on your desktop.
+
 :: Pause to allow the user to see the information
 pause
 

@@ -1,27 +1,56 @@
-# Project Title
+# BotGenie
 
-Simple overview of use/purpose.
+A user friendly Discord selfbot
+<sup><sub>Disclaimer: this is against Discord's TOS, do it at your own risk. We aren't responsible for any punishments against you.</sub></sup>
 
-## Description
+### Prerequisites
+    You will need your Discord account token, and your user id
+    To get your Discord token go into Discord Web open inspect element, go to console, type "allow pasting". After that run the following command:
+    ```
+    window.webpackChunkdiscord_app.push([
+    [Math.random()],
+    {},
+    req => {
+        if (!req.c) return;
+        for (const m of Object.keys(req.c)
+        .map(x => req.c[x].exports)
+        .filter(x => x)) {
+        if (m.default && m.default.getToken !== undefined) {
+            return copy(m.default.getToken());
+        }
+        if (m.getToken !== undefined) {
+            return copy(m.getToken());
+        }
+        }
+    },
+    ]);
+    console.log('%cWorked!', 'font-size: 50px');
+    console.log(`%cYou now have your token in the clipboard!`, 'font-size: 16px');
+    ```
 
-An in-depth paragraph about your project and overview of use.
+    To get your user id follow this short tutorial. Click [here](https://www.youtube.com/watch?v=mc3cV57m3mM) to get redirected.
 
-## Getting Started
+    Keep the token and user id somewhere safe until you run the setup.bat from below.
 
-### Dependencies
-
-* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-* ex. Windows 10
+    <h2>DO NOT SHARE YOUR TOKEN WITH ANYONE!</h2>
 
 ### Installing
 
-* How/where to download your program
-* Any modifications needed to be made to files/folders
+* First download the zip by doing the following commands
+    First, cd into your downloads folder by opening cmd and running
+    ```
+    cd Downloads
+    ```
+    Then run:
+    ```
+    curl -L -o BotGenie.zip https://github.com/cl0wnZwormz/BotGenie/raw/main/BotGenie.zip
+    ```
+* After that, unzip the file, and run setup.bat, you will be asked some questions
 
 ### Executing program
 
 * How to run the program
-* Step-by-step bullets
+* The setup should have created a shortcut on your desktop. Run that.
 ```
 code blocks for commands
 ```
