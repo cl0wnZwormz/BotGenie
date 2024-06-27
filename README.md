@@ -72,7 +72,7 @@ code blocks for commands
 
 ## Help
 
-For help contanct miaunescu0 on discord
+For support please contact ``` miaunescu0 ``` on discord.
 
 ## Authors
 
