@@ -6,6 +6,7 @@ A user friendly Discord selfbot
 ### Prerequisites
     You will need your Discord account token, and your user id
     To get your Discord token go into Discord Web open inspect element, go to console, type "allow pasting". After that run the following command:
+    
     ```
     window.webpackChunkdiscord_app.push([
     [Math.random()],
